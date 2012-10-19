@@ -1,0 +1,19 @@
+# This file contains general metadata about the project.
+
+@prefix : <http://usefulinc.com/ns/doap#>.
+
+`Sub-Talisman-Struct`
+	:programming-language "Perl" ;
+	:shortdesc            "the spawn of MooX-Struct and Sub-Talisman";
+	:homepage             <https://metacpan.org/release/Sub-Talisman-Struct>;
+	:download-page        <https://metacpan.org/release/Sub-Talisman-Struct>;
+	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Sub-Talisman-Struct>;
+	:repository           [ a :HgRepository; :browse <https://bitbucket.org/tobyink/p5-sub-talisman-struct> ];
+	:created              2012-10-19;
+	:license              <http://dev.perl.org/licenses/>;
+	:maintainer           cpan:TOBYINK;
+	:developer            cpan:TOBYINK.
+
+<http://dev.perl.org/licenses/>
+	dc:title  "the same terms as the perl 5 programming language system itself".
+

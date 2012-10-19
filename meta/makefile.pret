@@ -1,0 +1,11 @@
+# This file provides instructions for packaging.
+
+`Sub-Talisman-Struct`
+	perl_version_from m`Sub::Talisman::Struct`;
+	version_from      m`Sub::Talisman::Struct`;
+	readme_from       m`Sub::Talisman::Struct`;
+	test_requires     p`Test::More 0.61`;
+	requires          p`MooX::Struct 0.006`;
+	requires          p`Sub::Talisman`;
+.
+
