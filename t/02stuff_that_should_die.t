@@ -10,9 +10,9 @@ subtest 'isa checks' => sub {
 	;
 
 	::plan tests => 4;
-	::ok eval q{ sub foo1 :XXX(123) { ... }; 1 }, 'valid value';
-	::ok eval q{ sub foo2 :XXX { ... }; 1 }, 'no value';
-	::ok !eval q{ sub foo3 :XXX("Hello") { ... }; 1 }, 'invalid value';
+	::ok eval q{ sub foo1 :XXX(123) { 1 }; 1 }, 'valid value';
+	::ok eval q{ sub foo2 :XXX { 1 }; 1 }, 'no value';
+	::ok !eval q{ sub foo3 :XXX("Hello") { 1 }; 1 }, 'invalid value';
 	::like $@, qr{isa check for "number" failed}, 'error msg';
 };
 
@@ -23,10 +23,10 @@ subtest 'required attribute checks' => sub {
 	;
 
 	::plan tests => 5;
-	::ok eval q{ sub foo1 :XXX(123) { ... }; 1 }, 'valid value';
-	::ok !eval q{ sub foo2 :XXX { ... }; 1 }, 'no value';
+	::ok eval q{ sub foo1 :XXX(123) { 1 }; 1 }, 'valid value';
+	::ok !eval q{ sub foo2 :XXX { 1 }; 1 }, 'no value';
 	::like $@, qr{Missing required arguments: number}, 'error msg - missing';
-	::ok !eval q{ sub foo3 :XXX("Hello") { ... }; 1 }, 'invalid value';
+	::ok !eval q{ sub foo3 :XXX("Hello") { 1 }; 1 }, 'invalid value';
 	::like $@, qr{isa check for "number" failed}, 'error msg - invalid';
 };
 
@@ -37,8 +37,8 @@ subtest 'too many args' => sub {
 	;
 
 	::plan tests => 3;
-	::ok eval q{ sub foo1 :XXX(123) { ... }; 1 }, 'valid value';
-	::ok !eval q{ sub foo2 :XXX(123,456) { ... }; 1 }, 'too many values';
+	::ok eval q{ sub foo1 :XXX(123) { 1 }; 1 }, 'valid value';
+	::ok !eval q{ sub foo2 :XXX(123,456) { 1 }; 1 }, 'too many values';
 	::like $@, qr{Too many parameters for attribute Local::XXX3::XXX}, 'error msg';
 };
 

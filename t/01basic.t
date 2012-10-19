@@ -8,9 +8,9 @@ use attributes ();
 		XXX => [qw( $number! )],
 	;
 
-	sub foo :XXX(1) { ... };
-	sub bar :XXX(2) :YYY :ZZZ { ... };
-	sub baz : XXX(3) YYY ZZZ lvalue { ... };
+	sub foo :XXX(1) { 1 };
+	sub bar :XXX(2) :YYY :ZZZ { 1 };
+	sub baz : XXX(3) YYY ZZZ lvalue { 1 };
 }
 
 my $pkg = 'Local::XXX';
