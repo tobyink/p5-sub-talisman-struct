@@ -1,12 +1,12 @@
 package Sub::Talisman::Struct;
 
-use 5.008;
+use 5.012;
 use strict;
 use warnings;
 
 BEGIN {
 	$Sub::Talisman::Struct::AUTHORITY = 'cpan:TOBYINK';
-	$Sub::Talisman::Struct::VERSION   = '0.003';
+	$Sub::Talisman::Struct::VERSION   = '0.004';
 }
 
 use base qw( Sub::Talisman );

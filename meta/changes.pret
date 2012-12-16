@@ -17,3 +17,9 @@
 		item "Add build dep on Test::NoWarnings."^^Packaging;
 	].
 
+`Sub-Talisman-Struct 0.004 cpan:TOBYINK`
+	issued  2012-12-16;
+	changeset [
+		item "Require Perl 5.12; it just wasn't working in older versions. Patches for older versions of Perl are welcome, but I'm not going to waste any more time figuring this out."^^Packaging;
+	].
+
