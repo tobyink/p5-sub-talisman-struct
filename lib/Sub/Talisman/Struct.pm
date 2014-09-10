@@ -6,7 +6,7 @@ use warnings;
 
 BEGIN {
 	$Sub::Talisman::Struct::AUTHORITY = 'cpan:TOBYINK';
-	$Sub::Talisman::Struct::VERSION   = '0.004';
+	$Sub::Talisman::Struct::VERSION   = '0.005';
 }
 
 use base qw( Sub::Talisman );
