@@ -1,6 +1,7 @@
 @prefix deps:  <http://ontologi.es/doap-deps#> .
 
 <http://purl.org/NET/cpan-uri/dist/Sub-Talisman-Struct/project>
+	deps:runtime-requirement         [ deps:on "perl 5.012"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "MooX::Struct 0.016"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "Sub::Talisman 0.006"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "Exporter::Tiny 1.000000"^^deps:CpanId ];
