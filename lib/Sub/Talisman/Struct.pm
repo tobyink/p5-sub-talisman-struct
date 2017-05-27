@@ -9,7 +9,7 @@ BEGIN {
 	$Sub::Talisman::Struct::VERSION   = '0.005';
 }
 
-use base qw( Sub::Talisman );
+use parent qw( Sub::Talisman );
 use MooX::Struct 0.016 ();
 use Carp qw( confess );
 use Exporter::Tiny ();
