@@ -10,7 +10,7 @@ BEGIN {
 }
 
 use base qw( Sub::Talisman );
-use MooX::Struct ();
+use MooX::Struct 0.016 ();
 use Carp qw( confess );
 use Data::OptList ();
 use namespace::clean;
