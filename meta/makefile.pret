@@ -2,7 +2,8 @@
 
 <http://purl.org/NET/cpan-uri/dist/Sub-Talisman-Struct/project>
 	deps:runtime-requirement         [ deps:on "MooX::Struct 0.016"^^deps:CpanId ];
-	deps:runtime-requirement         [ deps:on "Sub::Talisman"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "Sub::Talisman 0.006"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "Exporter::Tiny 1.000000"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "Test::NoWarnings"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "Test::More 0.61"^^deps:CpanId ].
 

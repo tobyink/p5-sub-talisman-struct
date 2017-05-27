@@ -12,7 +12,7 @@ BEGIN {
 use base qw( Sub::Talisman );
 use MooX::Struct 0.016 ();
 use Carp qw( confess );
-use Data::OptList ();
+use Exporter::Tiny ();
 use namespace::clean;
 	
 sub import
@@ -20,7 +20,7 @@ sub import
 	my $class  = shift;
 	my $caller = caller;
 	
-	foreach my $arg (@{ Data::OptList::mkopt(\@_) })
+	foreach my $arg (@{ Exporter::Tiny::mkopt(\@_) })
 	{
 		my ($atr, $str) = @$arg;
 		$class->setup_for($caller => {
