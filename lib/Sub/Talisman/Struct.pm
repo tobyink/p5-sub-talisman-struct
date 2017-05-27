@@ -9,18 +9,20 @@ BEGIN {
 	$Sub::Talisman::Struct::VERSION   = '0.005';
 }
 
-use parent qw( Sub::Talisman );
+use Sub::Talisman ();
 use MooX::Struct 0.016 ();
 use Carp qw( confess );
-use Exporter::Tiny ();
+use Exporter::Tiny qw( mkopt );
 use namespace::clean;
-	
+
+our @ISA = qw( Sub::Talisman );
+
 sub import
 {
 	my $class  = shift;
 	my $caller = caller;
 	
-	foreach my $arg (@{ Exporter::Tiny::mkopt(\@_) })
+	foreach my $arg (@{ mkopt(\@_) })
 	{
 		my ($atr, $str) = @$arg;
 		$class->setup_for($caller => {
