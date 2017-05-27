@@ -22,7 +22,7 @@ sub import
 	my $class  = shift;
 	my $caller = caller;
 	
-	foreach my $arg (@{ mkopt(\@_) })
+	foreach my $arg (@{ mkopt \@_ })
 	{
 		my ($atr, $str) = @$arg;
 		$class->setup_for($caller => {
