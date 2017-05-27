@@ -23,10 +23,15 @@
 		item "Require Perl 5.12; it just wasn't working in older versions. Patches for older versions of Perl are welcome, but I'm not going to waste any more time figuring this out."^^Packaging;
 	].
 
-
 `Sub-Talisman-Struct 0.005 cpan:TOBYINK`
 	issued    2014-09-10;
 	changeset [
 		item "Switch to Dist::Inkt."^^Packaging;
+	].
+
+`Sub-Talisman-Struct 0.006 cpan:TOBYINK`
+	issued    2017-05-27;
+	changeset [
+		item "Keep up with changes to MooX::Struct."^^Update;
 	].
 

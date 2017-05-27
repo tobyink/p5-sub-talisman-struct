@@ -6,7 +6,7 @@ use warnings;
 
 BEGIN {
 	$Sub::Talisman::Struct::AUTHORITY = 'cpan:TOBYINK';
-	$Sub::Talisman::Struct::VERSION   = '0.005';
+	$Sub::Talisman::Struct::VERSION   = '0.006';
 }
 
 use Sub::Talisman ();
@@ -130,7 +130,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2012 by Toby Inkster.
+This software is copyright (c) 2012, 2017 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
