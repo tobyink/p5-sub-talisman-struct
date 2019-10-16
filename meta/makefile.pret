@@ -4,6 +4,7 @@
 	deps:runtime-requirement         [ deps:on "perl 5.012"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "MooX::Struct 0.016"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "Sub::Talisman 0.006"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "namespace::clean 0.27"^^deps:CpanId ];
 	deps:runtime-requirement         [ deps:on "Exporter::Tiny 1.000000"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "Test::NoWarnings"^^deps:CpanId ];
 	deps:test-requirement            [ deps:on "Test::More 0.61"^^deps:CpanId ].
